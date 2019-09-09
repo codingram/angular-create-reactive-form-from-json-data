@@ -1,10 +1,27 @@
-# AngularCreateReactiveFormFromJsonData
+# Step by Step Example Angular create ReactiveForm from JsonData
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+of the  
+[Angular](https://angular.io/)
 
-## Development server
+![Screenshot](src/assets/angular_create_reactive_form_from_json_data.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Step by Step Example Ionic Angular Capture and Sharing Image Audio Video](#step-by-step)
+
+## Getting Started
+
+1. [Download the installer](https://nodejs.org/) for Node.js
+   - check it with: `node --version`
+2. Install the angular CLI globally: `npm install -g @angular/cli`
+   - check it with: `ng --version`
+3. Create Angular Template blank: `ng new YourProjectName`
+   - creates a new Folder with the Name: YourProjectName and with blank template
+4. Go to your newly created project: `cd .\YourProjectName`
+5. Run `ng serve` within the app directory to see your app
+   - you see it in: [localhost:4200](http://localhost:4200)
+
 
 ## Step by Step
 
@@ -160,5 +177,6 @@ export class FormFromJsonDataComponent implements OnInit {
 ```
 
 ready
+
 
 

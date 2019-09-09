@@ -1,0 +1,35 @@
+<form novalidate [formGroup]="questionForm" (ngSubmit)="saveForm(questionForm.value)">
+
+<!--iterate over the questions-->
+<div *ngFor="let question of questions">
+<!-- switch for the type-->
+<div [ngSwitch]="question.type">
+
+  <label>{{question.question}}
+    <span *ngIf="question.required"> *</span>
+  </label>
+
+  <div *ngSwitchCase="'TEXT'">
+    <input type="text" [formControlName]="question.id">
+  </div>
+
+  <div *ngSwitchCase="'LONGTEXT'">
+      <textarea [formControlName]="question.id"></textarea>
+  </div>
+
+  <div *ngSwitchCase="'CHOICE'">
+      <select [formControlName]="question.id">
+        <option>Please select</option>
+        <option *ngFor="let choice of question.choices">
+          {{choice}}
+        </option>
+
+      </select>
+  </div>
+</div>
+</div>
+<br><button type="submit" class="btn" [disabled]="!questionForm.valid">Send</button>
+</form>
+
+
+

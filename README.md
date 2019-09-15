@@ -8,7 +8,7 @@ of the
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-- [Step by Step Example Ionic Angular Capture and Sharing Image Audio Video](#step-by-step)
+- [Step by Step Example Angular create reactive form from json data](#step-by-step)
 
 ## Getting Started
 
@@ -47,11 +47,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 // add the FormsModule, ReactiveFormsModule
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// add the component
 import { FormFromJsonDataComponent } from './form-from-json-data/form-from-json-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // add the component
     FormFromJsonDataComponent
   ],
   imports: [
